@@ -1,0 +1,18 @@
+import pyttsx3
+import PyPDF2
+a = PyPDF2.PdfFileReader('Name of your Pdf.pdf')
+pg_num = a.getNumPages()
+book = open('Name of you Pdf','rb')
+pdfReader = PyPDF2.PdfFileReader(book)
+pages = pdfReader.numPages
+print("Reading................")
+
+speaker = pyttsx3.init()
+speaker.setProperty('rate',145) # You can change the rate as per as your requirement
+speaker.say("Hello, I am going to narrate you your book")
+
+for i in range(0,pg_num + 1):
+    page = pdfReader.getPage(i)
+    text = page.extractText()
+    speaker.say(text)
+    speaker.runAndWait()
