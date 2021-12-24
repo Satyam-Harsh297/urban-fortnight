@@ -1,0 +1,22 @@
+
+import random
+
+h = input("Enter your password:\n")
+# here in 'a' variable you can write your the set of character from which password can be cracked
+a = "1234567890"
+a = list(a)
+guess =  ""
+fuck = 0
+while guess != h:
+    love = random.choices(a,k = len(h))
+    fuck = 1 + fuck
+    print("Trying--->","".join(love))
+    print("Attempts-->",fuck)
+    cj = "".join(love)
+    guess = cj
+
+print(f"#The password is Cracked========> {guess}")
+print(f"#Attempts Taken:{fuck}")
+        
+    
+
