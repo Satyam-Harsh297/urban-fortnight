@@ -1,0 +1,97 @@
+
+class Library:
+    Owner = "Kumar Jha"
+    while (True):
+        print("################################################# WELCOME TO SATYAM LIBRARY #################################################################################################################")
+        print(f"1.List all the books available.")
+        print(f"2.Enrool as a new member in library. ")
+        print(f"3.Get a book issued by Library.")
+        print(f"4.Depositing a book in Library")
+        print(f"5.Donate to library")
+        print(f"6.Press Q to Exit")
+        a = input("Enter Your Choice:\n")
+        if a!="1" and a!="2" and  a!="3" and a!="4" and a!="5" and a!="q":
+            print("####################################################################################")
+            print("Please , write a correct choice")
+        if a=="1":
+            print("****************************************************************************************")
+            print("############### Books Available are----->")
+            print("1.Mahabharat")
+            print("2.Python Programming")
+            print("3.Ethical Hacking")
+            print("4.Physics")
+            print("5.Economics")
+            
+        if a=="2":
+            print("****************************************************************************************")
+            c = input("Please Write your name:\n")
+            d = input("Please Write Your Age:\n")
+            e = input("Occupation plz:\n")
+            f = input("Please Deposite Your Rs20 on counter, If Submitted type 'y' :")
+            if f=="y":
+                print("````````````````````````````````````````````````````````````````````````````````````````")
+                print("---------->Ok, Now You are a member of Satyam Library\n --------->Thanks for choosing us!\n --------->You can get your pass on counter, So dont Forget to take it. ")
+            else:
+                print("Please Submit Your Fees First")
+        if a=="4":
+            print("****************************************************************************************")
+            print("1.Mahabharat")
+            print("2.Python Programming")
+            print("3.Ethical Hacking")
+            print("4.Physics")
+            print("5.Economics")
+            s = input("Which Book you wants to deposite:\n")
+            if s =="1" or s=="2" or  s=="3" or s=="4" or s=="5":
+                print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+                print("Ok Your Book Have Been Submitted, Thanks For giving us Opportunity to Serve you")
+            else:
+                print("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^")
+                print("Please write a valid value")
+        if a=="3":
+            print("****************************************************************************************")
+            print("Book Available are----->")
+            print("1.Mahabharat")
+            print("2.Python Programming")
+            print("3.Ethical Hacking")
+            print("4.Physics")
+            print("5.Economics")
+            j = input("Which book you Wants to be issued to you:\n")
+            if j=="1" or j=="2" or  j=="3" or j=="4" or j=="5":
+                print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+                print("Ok Your Book Have Been Issued, Thanks For giving us Opportunity to Serve you")
+            else:
+                print("$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$")
+                print("Sorry this Book is not Available right now , Please Try again after some times")
+            
+        if a=="5":
+            print("****************************************************************************************")
+            while (True):
+                print("Type 'q' to quit From this menu ")
+                print("If You have deposited earlier kindely ignore and press q")
+                l = input("Please write the Amount that you Wants to Deposite to us as a Fund:\n")
+                if l=="q":
+                    break
+                try: 
+                    print(f"Thanks For Heping us with {int(l)} Rs!")
+                except:
+                    print("Please Write a numerical value")
+
+        if a=="q":
+            print("************************************************************************************************")
+            print("Thanks for Coming in Satyam Library, We are Hoping that We Helped You!")
+            break
+
+
+
+x = Library()
+x.Owner = "Satyam"
+# print(x.Owner)
+
+
+
+
+
+
+
+            
+        
